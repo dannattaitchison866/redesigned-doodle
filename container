@@ -1,0 +1,14 @@
+import random
+
+for _ in range(100):
+    code_line = ""
+    
+    # 随机确定代码行的长度（1到10之间）
+    line_length = random.randint(1, 10)
+    
+    # 随机生成代码行的内容（使用小写字母和空格）
+    for _ in range(line_length):
+        code_line += random.choice('abcdefghijklmnopqrstuvwxyz ')
+    
+    # 打印生成的代码行
+    print(code_line)
